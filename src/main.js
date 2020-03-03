@@ -1,4 +1,4 @@
-import Vue from 'vue/dist/vue.js'
+import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home.vue'
@@ -15,6 +15,9 @@ const routes = [
 const router = new VueRouter({
   routes
 })
+
+Vue.component('home', Home)
+Vue.component('page1', Page1)
 
 new Vue({
   render: h => h(App),
