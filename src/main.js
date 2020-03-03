@@ -1,18 +1,15 @@
 import Vue from 'vue/dist/vue.js'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-import HelloWorld from "./components/HelloWorld.vue"
+import Home from './components/Home.vue'
+import Page1 from './components/Page1.vue'
 
 Vue.use(VueRouter)
 Vue.config.productionTip = false
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
-
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar },
-  { path: '/', component: HelloWorld }
+  { path: '/', component: Home },
+  { path: '/page1', component: Page1 }
 ]
 
 const router = new VueRouter({

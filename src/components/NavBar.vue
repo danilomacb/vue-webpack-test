@@ -1,8 +1,7 @@
 <template>
     <ul>
-        <li><router-link to="/">home</router-link></li>
-        <li><router-link to="/foo">foo</router-link></li>
-        <li><router-link to="/bar">bar</router-link></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/page1">Page1</router-link></li>
     </ul>
 </template>
 
